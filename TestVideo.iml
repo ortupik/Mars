@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/lib/jna-3.5.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/JNativeHook.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/JTransforms-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/platform-3.5.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/vlcj-3.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/JTattoo-1.6.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/mp3agic-0.8.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.36-bin.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/SearchLyricsAPI1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/thumbnailator-0.4.2-all.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="jna-3.5.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jna-3.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="JNativeHook.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/JNativeHook.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="JTransforms-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/JTransforms-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="platform-3.5.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/platform-3.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="vlcj-3.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/vlcj-3.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="JTattoo-1.6.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/JTattoo-1.6.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mp3agic-0.8.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mp3agic-0.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mysql-connector-java-5.1.36-bin.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.36-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="SearchLyricsAPI1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/SearchLyricsAPI1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thumbnailator-0.4.2-all.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/thumbnailator-0.4.2-all.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

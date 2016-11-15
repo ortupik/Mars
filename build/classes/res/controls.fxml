@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="control" fx:id="hbox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.95" prefHeight="28.0" prefWidth="1200.0" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.ControlsClass">
+   <children>
+      <ImageView fx:id="fullscreen" fitHeight="25.0" fitWidth="17.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hover/fullscreen.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fx:id="prev" fitHeight="29.0" fitWidth="16.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@prev.PNG" />
+         </image>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fx:id="pause" fitHeight="29.0" fitWidth="16.0" layoutX="32.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pause.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fx:id="next" fitHeight="29.0" fitWidth="16.0" layoutX="58.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@next.PNG" />
+         </image>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fx:id="stop" fitHeight="29.0" fitWidth="16.0" layoutX="57.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@stop.PNG" />
+         </image>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fx:id="settings" fitHeight="29.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hover/extended.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fx:id="snapshot" fitHeight="29.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hover/snapshot.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <Text fx:id="currentTime" fill="#1b1b1b" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Glow level="0.13" />
+         </effect>
+      </Text>
+      <Slider fx:id="positionSlider" prefHeight="14.0" prefWidth="876.0" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding></Slider>
+      <Text fill="#1b1b1b" strokeType="OUTSIDE" strokeWidth="0.0" text="03:00">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="volumeOn" fitHeight="29.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@volume-high.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+      </ImageView>
+      <Slider fx:id="volumeSlider" layoutX="285.0" layoutY="29.0" minWidth="-Infinity" prefHeight="14.0" prefWidth="118.0" value="50.0" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets left="5.0" right="10.0" />
+         </padding>
+      </Slider>
+   </children>
+   <effect>
+      <InnerShadow height="11.93" radius="5.4475" width="11.86" />
+   </effect>
+</HBox>

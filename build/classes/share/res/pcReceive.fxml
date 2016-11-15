@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="share.PcReceiveController">
+   <children>
+      <HBox id="background2" alignment="CENTER" prefHeight="36.0" prefWidth="667.0" stylesheets="@controls.css">
+         <children>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Glow level="0.32" />
+               </effect>
+               <image>
+                  <Image url="@xmp.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DOWNLOAD HOST -" wrappingWidth="243.80126953125">
+               <effect>
+                  <Glow level="0.19" />
+               </effect>
+               <fill>
+                  <LinearGradient endX="0.5952380952380953" endY="0.9047619047619049" proportional="false" startX="0.5523809523809524" startY="0.2285714285714286">
+                     <stops>
+                        <Stop color="#0009d9" />
+                        <Stop color="#000bd9" offset="0.051546391752577324" />
+                        <Stop color="#000bd9" offset="0.8900343642611683" />
+                        <Stop color="#a0208c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text fx:id="host" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="160.80126953125">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <fill>
+                  <LinearGradient endX="0.5952380952380953" endY="0.9047619047619049" proportional="false" startX="0.5380952380952381" startY="0.2285714285714286">
+                     <stops>
+                        <Stop color="#0009d9" />
+                        <Stop color="#000bd9" offset="0.051546391752577324" />
+                        <Stop color="#000bd9" offset="0.8900343642611683" />
+                        <Stop color="#a0208c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox id="background" alignment="BASELINE_CENTER" prefHeight="394.0" prefWidth="667.0" stylesheets="@controls.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="667.0">
+               <children>
+                  <Text fx:id="filename" strokeType="OUTSIDE" strokeWidth="0.0" text="Dappy - Good Intentions (Dappy - Bad Intentions Album Out Now).mp4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4277777777777778" centerY="0.45714285714285713" focusDistance="0.2558139534883721" radius="0.7325581395348837">
+                           <stops>
+                              <Stop color="#2b0dd7" />
+                              <Stop color="#e11010" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="667.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="File size">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fileSize" strokeType="OUTSIDE" strokeWidth="0.0" text="100 mb">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="667.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Save to ">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="savePath" strokeType="OUTSIDE" strokeWidth="0.0" text="C:\">
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.5142857142857142" startY="0.35714285714285715">
+                           <stops>
+                              <Stop color="#2b0dd7" />
+                              <Stop color="#e11010" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Button fx:id="change" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Change">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="667.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resumable ">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NO">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="667.0">
+               <children>
+                  <Button fx:id="save" cancelButton="true" mnemonicParsing="false" prefHeight="32.0" prefWidth="97.0" text="SAVE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="667.0" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="streaming.ReceiveController">
+   <children>
+      <HBox id="background2" alignment="CENTER" prefHeight="36.0" prefWidth="667.0" stylesheets="@controls.css">
+         <children>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Glow level="0.32" />
+               </effect>
+               <image>
+                  <Image url="@xmp.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RECEIVE STREAM -" wrappingWidth="243.80126953125">
+               <effect>
+                  <Glow level="0.19" />
+               </effect>
+               <fill>
+                  <LinearGradient endX="0.5952380952380953" endY="0.9047619047619049" proportional="false" startX="0.5523809523809524" startY="0.2285714285714286">
+                     <stops>
+                        <Stop color="#0009d9" />
+                        <Stop color="#000bd9" offset="0.051546391752577324" />
+                        <Stop color="#000bd9" offset="0.8900343642611683" />
+                        <Stop color="#a0208c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CHRISX-PC" wrappingWidth="160.80126953125">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <fill>
+                  <LinearGradient endX="0.5952380952380953" endY="0.9047619047619049" proportional="false" startX="0.5380952380952381" startY="0.2285714285714286">
+                     <stops>
+                        <Stop color="#0009d9" />
+                        <Stop color="#000bd9" offset="0.051546391752577324" />
+                        <Stop color="#000bd9" offset="0.8900343642611683" />
+                        <Stop color="#a0208c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox alignment="BASELINE_CENTER" prefHeight="176.0" prefWidth="667.0">
+         <children>
+            <HBox id="notice" alignment="CENTER" prefHeight="41.0" prefWidth="667.0" style="-fx-background-color: ;" stylesheets="@controls.css">
+               <children>
+                  <Text fx:id="filename" fill="#4000d6" strokeType="OUTSIDE" strokeWidth="0.0" text="Ensure your are connected to same network as the one sharing.">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="667.0">
+               <children>
+                  <Text fill="#0c0d17" strokeType="OUTSIDE" strokeWidth="0.0" text="ip address">
+                     <font>
+                        <Font name="Century" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="ipField" promptText="192.168.43.252">
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text fill="#0c0d17" strokeType="OUTSIDE" strokeWidth="0.0" text="port">
+                     <font>
+                        <Font name="Century" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="portField" promptText="8000">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text fill="#0c0d17" strokeType="OUTSIDE" strokeWidth="0.0" text="screen">
+                     <font>
+                        <Font name="Century" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="screen" prefHeight="25.0" prefWidth="38.0" promptText="1">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="connect" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="CONNECT" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

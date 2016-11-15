@@ -1,0 +1,29 @@
+#control{
+			-fx-background-image:url("wal.jpg");
+		-fx-background-radius : 0, 30px ,30px, 30px ;
+}
+#background{
+			-fx-background-image:url("Elegant_Background-7.jpg");
+		-fx-background-radius : 0, 30px ,30px, 30px ;
+}
+#background2{
+			-fx-background-image:url("wal.jpg");
+		-fx-background-radius : 0, 30px ,30px, 30px ;
+		
+}
+
+#info{
+	-fx-background-color:transparent;
+}
+#top{
+	 -fx-background-color:
+        derive(-fx-color,-36%),
+        derive(-fx-color,73%),
+        linear-gradient(to bottom,blue,rgb(9,146,208));
+		-fx-background-radius : 10px, 10px ,10px, 10px ;
+		
+}
+
+
+
+.

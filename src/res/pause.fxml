@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox id="playLarge" fx:id="playLarge" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.43" prefHeight="110.0" prefWidth="117.0" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Ellipse fill="DODGERBLUE" radiusX="54.0" radiusY="52.0" stroke="#f5f3f3" strokeType="INSIDE" />
+   </children>
+</VBox>

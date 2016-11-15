@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="38.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXSwingApplication1">
+   <children>
+      <HBox prefHeight="19.0" prefWidth="1205.0" style="-fx-background-color: rgb(229,227,224);">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" translateX="2.0" translateY="3.0">
+               <image>
+                  <Image url="@xmp.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MediaSuite 1.0 Alpha" textAlignment="CENTER" translateY="4.0" wrappingWidth="162.830078125">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="1.0">
+                     <input>
+                        <Glow />
+                     </input>
+                  </Bloom>
+               </effect>
+            </Text>
+            <HBox alignment="TOP_CENTER" prefHeight="17.0" prefWidth="780.0" style="-fx-background-color: rgb(229,227,224);">
+               <children>
+                  <Button id="top" fx:id="top" alignment="CENTER" contentDisplay="CENTER" depthTest="DISABLE" mnemonicParsing="false" mouseTransparent="true" prefHeight="23.0" prefWidth="506.0" stylesheets="@controls.css" text="will.i.am - Feelin' Myself ft. Miley Cyrus, Wiz Khalifa, French Montana" textAlignment="JUSTIFY" textFill="#f2f0f0" textOverrun="WORD_ELLIPSIS" translateY="-1.0">
+                     <font>
+                        <Font name="Trebuchet MS" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="160.830078125">
+                     <font>
+                        <Font name="Century" size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="3.0">
+                     <image>
+                        <Image url="@minim.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="3.0">
+                     <image>
+                        <Image url="@maxim.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="3.0">
+                     <image>
+                        <Image url="@close.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <ColorAdjust brightness="0.02" hue="0.16" />
+               </effect>
+            </HBox>
+         </children>
+      </HBox>
+      <MenuBar prefHeight="16.0" prefWidth="1205.0" snapToPixel="false">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Players">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Network ">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Media">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>

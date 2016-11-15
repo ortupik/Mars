@@ -1,0 +1,179 @@
+
+.root {
+  /* -c-(base|text|border|fill|bg)[-group][-description] */
+
+  -c-base: rgb(173, 216, 230);
+  -c-base-50: rgba(173, 216, 230, 0.5);
+  -c-base-25: rgba(173, 216, 230, 0.75);
+
+  -c-text: -c-base;
+  -c-text-highlight: derive(-c-base, +75%);
+  -c-text-focused: derive(-c-base, +75%);
+  -c-text-unobtrusive: derive(-c-base, -30%);
+  -c-text-watermark: rgba(173, 216, 230, 0.1);
+
+  -c-shadow-highlight: derive(-c-base, -50%);
+
+  -c-border-tab: rgb(47,79,79);
+  -c-border-control: derive(-c-base, -50%);
+  -c-border-highlight: derive(-c-base, +75%);
+  -c-border-dialog: -c-base;
+
+  -c-fill-dark: derive(-c-base, -75%);
+
+  -c-star: yellow;
+  -c-star-disabled: gray;
+
+  -c-bg-dialog: rgba(173, 216, 230, 0.2);
+  -c-bg-dialog-highlight:rgb(10, 102, 250);
+  -c-bg-transparent: rgba(0, 0, 0, 0.66);
+
+  -c-bg-control: derive(-c-base-25, -75%);
+  -c-bg-combobox-cell: rgba(0, 0, 0, 0.8);
+  -c-bg-combobox-focused-cell: derive(rgba(173, 216, 230, 0.8), -50%);
+
+  color-main: -c-base;
+
+  color-focused-text: derive(color-main, 30%);
+
+  color-content-background: derive(color-blue-80, -90%);
+
+  color-blue: -c-base;
+  color-blue-80: rgba(173, 216, 230, 0.8);
+  color-blue-70: rgba(173, 216, 230, 0.7);
+  color-blue-50: rgba(173, 216, 230, 0.5);
+  color-blue-40: rgba(173, 216, 230, 0.4);
+  color-blue-20: rgba(173, 216, 230, 0.2);
+  color-blue-10: rgba(173, 216, 230, 0.1);
+  color-orange: rgb(255, 180, 50);
+  color-green: rgb(0, 255, 0);
+  color-yellow: rgb(255, 255, 0);
+  color-red: rgb(255, 0, 0);
+  color-white: rgb(255, 255, 255);
+
+  color-black-50: rgba(0, 0, 0, 0.50);
+  color-black-75: rgba(0, 0, 0, 0.75);
+
+  -fx-background-color: transparent;
+
+  -fx-font-family: "Candara";
+  -fx-font-size: 15px;
+  -fx-font-weight: normal;
+
+  -fx-focus-color: rgb(47, 79, 79);
+}
+
+
+
+.scroll-pane {
+  -fx-background-color: transparent;
+}
+
+.label {
+  -fx-text-fill: color-blue;
+}
+
+
+
+
+.tab-pane .tab-header-area .tab-header-background {
+   -fx-background-color: transparent;
+}
+
+.tab-pane .tab-content-area {
+  -fx-border-color: rgb(10, 102, 250);
+  -fx-border-width: 1 1 1 1;
+ -fx-background-image:url("Elegant_Background-7.jpg");;
+  -fx-padding: 10 10 10 10;
+}
+
+.tab {
+  -fx-border-color: transparent;
+  -fx-border-radius: 5 5 0 0;
+  -fx-background-color:rgb(10, 102, 250);
+}
+
+.tab:selected {
+ -fx-border-color: transparent;
+  -fx-background-color:rgb(47,79,79);
+}
+
+.tab .tab-label {
+  -fx-text-fill:white;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill:white;
+}
+
+/*
+ * ComboBox: MediaLook
+ */
+
+.combo-box {
+  -fx-background-color: rgb(10, 102, 250);
+  -fx-border-color:transparent;
+  -fx-border-width: 1;
+}
+
+.combo-box .arrow-button {
+  -fx-background-color: -c-bg-control;
+  -fx-border-color: rgb(47,79,79);
+  -fx-border-width: 1, 1;
+  -fx-border-insets: 0, 1;
+}
+
+.combo-box .list-cell {
+  -fx-text-fill: rgb(47,79,79);
+}
+
+.combo-box-popup .list-view {
+  -fx-background-color:rgb(47,79,79);
+  -fx-border-color: -c-border-tab;
+  -fx-border-width: 1 1 1 1;
+}
+
+.combo-box-popup .list-view .list-cell {
+  -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view .list-cell:focused {
+  -fx-background-color: rgb(47,79,79);
+  -fx-text-fill: white;
+}
+
+.combo-box-base > .arrow-button > .arrow {
+  -fx-background-color: white;
+}
+
+/*
+ * CheckBox: MediaLook
+ */
+
+.check-box {
+  -fx-text-fill: black;
+}
+
+.check-box > .box {
+  -fx-background-color: rgb(47,79,79);
+  -fx-background-insets: 0;
+  -fx-background-radius: 1;
+    
+  -fx-border-color: white;
+  -fx-border-insets: 0;
+  -fx-border-radius: 5;
+  -fx-border-width: 1;
+}
+
+.check-box:selected > .box > .mark {
+  -fx-background-color: -c-text-highlight;
+}
+
+
+ 
+.check-box.focused > .box, .combo-box-base.focused {
+  -fx-border-color: -fx-focus-color, -c-border-control;
+  -fx-border-width: 3, 1;
+  -fx-border-insets: -5.4, 0;
+  -fx-border-radius: 5.4, 0;
+}

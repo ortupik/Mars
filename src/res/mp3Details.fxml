@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="950.0" style="-fx-background-color: BLACK;" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp3Player.Mp3DetailApplet">
+   <children>
+      <ImageView fx:id="mp3Image" fitHeight="227.0" fitWidth="214.0" pickOnBounds="true" />
+      <VBox alignment="CENTER_LEFT" prefHeight="226.0" prefWidth="131.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.26666666666666666">
+                     <stops>
+                        <Stop color="#f2efef" />
+                        <Stop color="#3315ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Artist">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.26666666666666666">
+                     <stops>
+                        <Stop color="#f2efef" />
+                        <Stop color="#3315ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Album">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.26666666666666666">
+                     <stops>
+                        <Stop color="#f2efef" />
+                        <Stop color="#3315ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Genre">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.26666666666666666">
+                     <stops>
+                        <Stop color="#f2efef" />
+                        <Stop color="#3315ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bitrate">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.26666666666666666">
+                     <stops>
+                        <Stop color="#f2efef" />
+                        <Stop color="#3315ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="226.0" prefWidth="152.0">
+         <children>
+            <Text fx:id="titleField" fill="#eee9e9" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="artistField" fill="#eee9e9" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="albumField" fill="#eee9e9" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="genreField" fill="#eee9e9" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="bitrateField" fill="#eee9e9" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <InnerShadow choke="0.23" color="#19bbbd" height="36.57" radius="19.0825" width="41.76" />
+   </effect>
+</HBox>

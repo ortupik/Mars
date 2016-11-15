@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="share.DownloadController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" />
+      <HBox>
+         <children>
+            <VBox prefHeight="495.0" prefWidth="45.0" />
+            <TableView fx:id="downloadTable" prefHeight="495.0" prefWidth="815.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="filenameColumn" prefWidth="290.0" text="File Name" />
+                <TableColumn fx:id="sizeColumn" prefWidth="131.0" text="Size" />
+                  <TableColumn fx:id="statusColumn" minWidth="0.0" prefWidth="114.0" text="Status" />
+                  <TableColumn fx:id="timeColumn" prefWidth="99.0" text="Time left" />
+                  <TableColumn fx:id="rateColumn" prefWidth="228.0" text="Transfer Rate" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

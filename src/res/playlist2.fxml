@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="control" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="351.0" style="-fx-background-color: black;" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.PlaylistClass">
+   <children>
+      <ToolBar minHeight="-Infinity" prefHeight="29.0" prefWidth="362.0" style="-fx-background-color: white;">
+        <items>
+            <Button fx:id="undock" mnemonicParsing="false" prefHeight="23.0" prefWidth="57.0" style="-fx-background-color: Gray;" text="UNDOCK" textFill="#f2ebeb">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" onMousePressed="#mousePressed" prefHeight="23.0" prefWidth="220.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  PLAYLIST" textAlignment="CENTER" wrappingWidth="121.80126953125">
+                     <effect>
+                        <Glow level="0.56" />
+                     </effect>
+                     <fill>
+                        <LinearGradient endX="0.5952380952380953" endY="0.9047619047619049" proportional="false" startX="0.5380952380952381" startY="0.2285714285714286">
+                           <stops>
+                              <Stop color="#88888d" />
+                              <Stop color="#dadbe8" offset="0.051546391752577324" />
+                              <Stop color="#9e9fb2" offset="0.8900343642611683" />
+                              <Stop color="#c94f4f" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <font>
+                        <Font name="Century" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Button fx:id="close" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="54.0" style="-fx-background-color: grey;" text="CLOSE" textFill="#f2f2f2">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+        </items>
+      </ToolBar>
+      <TextField fx:id="searchField" opacity="0.73" prefHeight="12.0" prefWidth="362.0" promptText="search" style="-: ;" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="Tahoma Bold" size="11.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.24" color="#6c6ba4" radius="19.6375" width="59.55" />
+         </effect></TextField>
+      <TableView fx:id="playlistTable" minWidth="-Infinity" onMousePressed="#mousePressed" prefHeight="480.0" prefWidth="325.0" stylesheets="@styles.css" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="titleColumn" maxWidth="390.0" prefWidth="390.0" text="PLAYLIST" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust hue="-0.51">
+               <input>
+                  <InnerShadow color="#252424" />
+               </input></ColorAdjust>
+         </effect>
+      </TableView>
+   </children>
+   <effect>
+      <ColorAdjust hue="0.17" />
+   </effect>
+</VBox>

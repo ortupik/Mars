@@ -1,0 +1,9 @@
+.scene { 
+ -fx-border-width: 2;
+  -fx-background-color: yellow;
+}
+.scene-change{
+ -fx-border-width: 2;
+  -fx-background-color: yellow;
+}
+

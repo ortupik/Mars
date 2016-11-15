@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="background2" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="580.0" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.PlaylistClass">
+   <children>
+      <HBox alignment="CENTER" onMousePressed="#mousePressed" prefHeight="49.0" prefWidth="444.0">
+         <children>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@xmp.png" />
+               </image>
+               <effect>
+                  <Glow level="0.32" />
+               </effect>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  PLAYLIST" wrappingWidth="135.80126953125">
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.5952380952380953" endY="0.9047619047619049" proportional="false" startX="0.5380952380952381" startY="0.2285714285714286">
+                     <stops>
+                        <Stop color="#0009d9" />
+                        <Stop color="#000bd9" offset="0.051546391752577324" />
+                        <Stop color="#000bd9" offset="0.8900343642611683" />
+                        <Stop color="#a0208c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <Glow level="0.56" />
+               </effect>
+            </Text>
+         </children>
+      </HBox>
+      <TextField fx:id="searchField" opacity="0.74" prefHeight="25.0" prefWidth="370.0" promptText="search" VBox.vgrow="ALWAYS">
+         <effect>
+            <InnerShadow color="#0d07e3" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></TextField>
+      <TableView fx:id="playlistTable" onMousePressed="#mousePressed" prefHeight="662.0" prefWidth="463.0" stylesheets="@styles.css" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="579.0" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </TableView>
+      <HBox id="control" fx:id="hbox" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.95" prefHeight="30.0" prefWidth="532.0" stylesheets="@controls.css" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="playli" fitHeight="29.0" fitWidth="16.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hover/playli.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="prev" fitHeight="29.0" fitWidth="16.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hover/prev.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="pause" fitHeight="29.0" fitWidth="16.0" layoutX="32.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pause.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="next" fitHeight="29.0" fitWidth="16.0" layoutX="58.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hover/next.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="stop" fitHeight="29.0" fitWidth="16.0" layoutX="57.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hover/stop.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fx:id="currentTime" fill="#1b1b1b" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Text>
+            <Slider fx:id="positionSlider" prefHeight="14.0" prefWidth="217.0" HBox.hgrow="ALWAYS">
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="0.06" color="#5414e8" height="13.97" radius="7.442500000000001" width="17.8" />
+               </effect>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Slider>
+            <Text fill="#1b1b1b" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fx:id="volumeOn" fitHeight="29.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@volume-high.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Slider fx:id="volumeSlider" layoutX="285.0" layoutY="29.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="77.0" value="50.0" HBox.hgrow="ALWAYS">
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="0.06" color="#5414e8" height="1.0" radius="4.1975" width="17.79" />
+               </effect>
+               <padding>
+                  <Insets left="5.0" right="10.0" />
+               </padding>
+            </Slider>
+         </children>
+         <effect>
+            <InnerShadow color="#242425" height="12.442499999999999" radius="5.575625" width="11.86" />
+         </effect>
+      </HBox>
+   </children>
+</VBox>

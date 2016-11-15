@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox id="playLarge" fx:id="playLarge" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.76" prefHeight="124.0" prefWidth="126.0" style="-fx-background-color: TRANSPARENT;" stylesheets="@controls.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+</VBox>

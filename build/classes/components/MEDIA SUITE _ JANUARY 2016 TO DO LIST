@@ -1,0 +1,13 @@
+**************LYRICS******************
+Create a database(embedded Derby)<AND OR a table> for Lyrics
+     <Title><Artist><Album><Lyrics>
+     TextPane -->Search for a column in the DB with matching   <Title><Artist><Album> ---Display
+     (if NOT EXISTS<Lyrics>)
+      TextPane -->Search Internet <Title><Artist><Album>---Display Directly
+      Download and save in the Database
+Create Algorithm for Displaying Lyrics      
+
+*************Android -Pc Commands*******************
+Download lyrics Via Android and send to database<JAVA>
+Resizing and Responsive JFrame with multiscreen interface
+Play files from android phone and vice versa

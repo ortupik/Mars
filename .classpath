@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/jna-3.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/JNativeHook.jar"/>
+	<classpathentry kind="lib" path="lib/JTransforms-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/platform-3.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/vlcj-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/mp3agic-0.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.36-bin.jar"/>
+	<classpathentry kind="lib" path="lib/SearchLyricsAPI1.0.jar"/>
+	<classpathentry kind="lib" path="lib/thumbnailator-0.4.2-all.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

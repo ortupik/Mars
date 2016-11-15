@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="hbox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.95" prefHeight="24.0" prefWidth="1141.0" style="-fx-background-color: black;" stylesheets="@controls.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="28.0" prefWidth="187.0" style="-fx-background-color: black;" stylesheets="@controls.css">
+               <children>
+                  <ImageView fx:id="fullscreen" fitHeight="21.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust brightness="0.14" contrast="0.1" hue="0.19" />
+                     </effect>
+                     <image>
+                        <Image url="@newest/fullscreen.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="prev" fitHeight="17.0" fitWidth="15.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust brightness="-0.37" contrast="0.15" hue="0.49" saturation="0.8" />
+                     </effect>
+                     <image>
+                        <Image url="@prev.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="pause" fitHeight="17.0" fitWidth="18.0" pickOnBounds="true">
+                     <effect>
+                        <ColorAdjust brightness="0.14" contrast="0.1" hue="0.03" />
+                     </effect>
+                     <image>
+                        <Image url="@pause.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="next" fitHeight="22.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust brightness="-0.37" contrast="0.15" hue="0.49" saturation="0.8" />
+                     </effect>
+                     <image>
+                        <Image url="@next.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="stop" fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust hue="0.63" />
+                     </effect>
+                     <image>
+                        <Image url="@newest/stop.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="equalizer" fitHeight="16.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust brightness="-0.37" contrast="0.15" hue="0.49" saturation="0.8" />
+                     </effect>
+                     <image>
+                        <Image url="@hover/extended.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="snapshot" fitHeight="29.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust hue="0.44" />
+                     </effect>
+                     <image>
+                        <Image url="@hover/snapshot.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow color="#fffbfb" spread="0.51" />
+               </effect>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <Text fx:id="currentTime" fill="#f2ecec" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+               <effect>
+                  <Glow level="0.13" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Text>
+            <Slider fx:id="positionSlider" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="6.0" prefWidth="690.0" HBox.hgrow="ALWAYS">
+               <effect>
+                  <ColorAdjust hue="-0.05">
+                     <input>
+                        <DropShadow color="WHITE" height="23.03" radius="8.9625" spread="0.05" width="14.82" />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <HBox.margin>
+                  <Insets bottom="1.0" left="10.0" />
+               </HBox.margin>
+            </Slider>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="03:00">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fx:id="volumeOn" fitHeight="14.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@volume-high.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Slider fx:id="volumeSlider" layoutX="285.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="91.0" value="50.0">
+               <padding>
+                  <Insets left="5.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="1.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+         <effect>
+            <DropShadow color="#f8f5f5" radius="17.4125" spread="0.48" width="50.65" />
+         </effect>
+      </HBox>
+   </children>
+</HBox>

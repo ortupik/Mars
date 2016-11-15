@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="204.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="share.SavedNoticeController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: orange;">
+         <children>
+            <Text fill="#fcfafa" strokeType="OUTSIDE" strokeWidth="0.0" text="FILE SAVED !" wrappingWidth="237.13671875">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox id="background" alignment="CENTER" prefHeight="117.0" prefWidth="600.0" style="-fx-background-color: ;" stylesheets="@controls.css">
+         <children>
+            <Button fx:id="close" mnemonicParsing="false" prefHeight="16.0" prefWidth="95.0" style="-fx-background-color: orange;" text="CLOSE" textFill="#f8f7f7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

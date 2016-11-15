@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="722.0"  stylesheets="@preferences.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.PreferencesController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button mnemonicParsing="false" text="Interface" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Video" />
+            <Button layoutX="77.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Audio" />
+            <Button layoutX="145.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Network" />
+            <Hyperlink prefHeight="19.0" prefWidth="361.0" text="www.techbay.coolpage.biz">
+               <padding>
+                  <Insets left="200.0" />
+               </padding>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
+        </items>
+      </ToolBar>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="722.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Playlist" />
+            <Tab text="Controls" />
+            <Tab text="Audio" />
+            <Tab text="Internet">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Set proxy to stream over the Internet">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="noProxy" mnemonicParsing="false" text="No proxy" />
+                        <RadioButton fx:id="systemProxy" mnemonicParsing="false" text="Use system proxy settings" />
+                        <RadioButton fx:id="manualProxy" mnemonicParsing="false" text="Manual proxy settings" />
+                        <VBox alignment="CENTER" prefHeight="176.0" prefWidth="667.0">
+                           <children>
+                              <CheckBox fx:id="checkbox" mnemonicParsing="false" text="CheckBox" />
+                              <HBox id="notice" alignment="CENTER" prefHeight="41.0" prefWidth="667.0" style="-fx-background-color: ;" stylesheets="@../share/res/controls.css">
+                                 <children>
+                                    <Text fx:id="filename" fill="#4000d6" strokeType="OUTSIDE" strokeWidth="0.0" text="http proxy">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="667.0">
+                                 <children>
+                                    <Text fill="#0c0d17" strokeType="OUTSIDE" strokeWidth="0.0" text="proxy">
+                                       <font>
+                                          <Font name="Century" size="17.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Text>
+                                    <TextField fx:id="ipField" promptText="192.168.43.252">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="20.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Text fill="#0c0d17" strokeType="OUTSIDE" strokeWidth="0.0" text="port">
+                                       <font>
+                                          <Font name="Century" size="17.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <TextField fx:id="portField" prefHeight="25.0" prefWidth="94.0" promptText="8000">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Button fx:id="connect" mnemonicParsing="false" prefHeight="21.0" prefWidth="100.0" text="CONNECT" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="Android" />
+         </tabs>
+      </TabPane>
+   </children>
+</VBox>

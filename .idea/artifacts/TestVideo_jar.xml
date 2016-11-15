@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TestVideo:jar">
+    <output-path>D:/CMP</output-path>
+    <root id="archive" name="TestVideo.jar">
+      <element id="module-output" name="TestVideo" />
+      <element id="extracted-dir" path="D:/lib/vlcj-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/workspace/FX/src/sample/lib/JTattoo-1.6.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/lib/JNativeHook.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/lib/JTransforms-3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/lib/jna-3.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/lib/platform-3.5.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
