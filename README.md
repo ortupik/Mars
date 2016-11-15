@@ -1,6 +1,5 @@
 Open Source Java/Java FX media player.
 It uses VLC libaries and is a simple implementation of vlcj framework.(https://github.com/caprica/vlcj-player)
-Disclaimer:this project is vastly incomplete.
 
 Features
 =========
@@ -38,7 +37,7 @@ Feel free to fork it
 
 About me
 ========== 
-I am Chris kipruto , Dedan Kimathi University Of Technology student developer in Kenya 
+Chris kipruto (DeKUT)
 email:oturpik@gmail.com
 
 # This project uses GPLv3 LICENSE
